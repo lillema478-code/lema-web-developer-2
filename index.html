@@ -25,7 +25,7 @@
     <meta name="keywords" content="Lema web developer, Ethiopian web developer, Tofik Tech partner, Grade 11 developer, web designer Addis Ababa, Ethiopian websites, affordable websites Ethiopia, student developer Ethiopia, frontend developer, HTML CSS JavaScript Ethiopia">
     
     <!-- AUTHOR -->
-    <meta name="author" content="Lema -web-developer">
+    <meta name="author" content="Lema - web-developer">
     
     <!-- ROBOTS (Tells Google to index this page) -->
     <meta name="robots" content="index, follow">
@@ -46,7 +46,7 @@
     <meta property="og:image" content="https://toticr183-dev.github.io/Lema-web-developer/lema-profile.jpg">
     <meta property="og:url" content="https://toticr183-dev.github.io/Lema-web-developer/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Lema-Web Developer">
+    <meta property="og:site_name" content="Lema - Web Developer">
     
     <!-- TWITTER CARD (For Twitter/X sharing) -->
     <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +72,7 @@
         "url": "https://toticr183-dev.github.io/Lema-web-developer/",
         "sameAs": [
             "https://github.com/lema-dev",
-            "https://t.me/lema_dev"
+            "https://t.me/Lil_Lema528"
         ],
         "worksFor": {
             "@type": "Organization",
@@ -749,6 +749,18 @@
             color: #666;
         }
 
+        .contact-item a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
         .social-links {
             display: flex;
             justify-content: center;
@@ -773,6 +785,16 @@
 
         .social-link:hover {
             transform: scale(1.2) rotate(360deg);
+        }
+
+        /* Telegram specific color */
+        .social-link.telegram {
+            background: linear-gradient(135deg, #0088cc, #0066cc);
+        }
+
+        /* Instagram specific color */
+        .social-link.instagram {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcaf45);
         }
 
         /* ===== FOOTER ===== */
@@ -1033,7 +1055,10 @@
                     <i class="fas fa-school"></i>
                 </div>
                 <div class="project-content">
-                    <h3>School Management System</h3>
+                    <h3>
+                        School Management System
+                        <span class="github-badge"><i class="fab fa-github"></i> GitHub</span>
+                    </h3>
                     <p>Comprehensive school management system for student records, attendance tracking, grade management, and teacher administration.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
@@ -1041,8 +1066,8 @@
                         <span class="tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://lillema478-code.github.io/school-manegment/" target="_blank" class="project-link">
-                            live Demo <i class="fas fa-arrow-right"></i>
+                        <a href="https://github.com/lillema478-code/school-manegement" target="_blank" class="project-link">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -1107,35 +1132,72 @@
         </div>
     </section>
     
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT SECTION WITH CLICKABLE LINKS -->
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
         <p class="section-subtitle">Let's work together on your next project</p>
         
         <div class="contact-container">
             <div class="contact-info">
+                <!-- Phone -->
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
                     <h3>Phone</h3>
-                    <p>+251902651279/251706279400</p>
+                    <p>
+                        <a href="tel:+251902651279">
+                            +251902651279
+                        </a>
+                    </p>
                 </div>
+                
+                <!-- Telegram - Opens directly -->
                 <div class="contact-item">
                     <i class="fab fa-telegram"></i>
                     <h3>Telegram</h3>
-                    <p>@Lil_lema528</p>
+                    <p>
+                        <a href="https://t.me/Lil_Lema528" target="_blank" rel="noopener noreferrer">
+                            @Lil_Lema528
+                        </a>
+                    </p>
                 </div>
+                
+                <!-- Email -->
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>lillema478@gmail.com</p>
+                    <p>
+                        <a href="mailto:lillema478@gmail.com">
+                            lillema478@gmail.com
+                        </a>
+                    </p>
                 </div>
             </div>
             
+            <!-- Social Media Links (Clickable) -->
             <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <!-- GitHub -->
+                <a href="https://github.com/lillema478-code" target="_blank" rel="noopener noreferrer" class="social-link" 
+                   title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- Telegram -->
+                <a href="https://t.me/Lil_Lema528" target="_blank" rel="noopener noreferrer" class="social-link telegram" 
+                   title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                
+                <!-- Instagram with your username lil_lemi_ -->
+                <a href="https://instagram.com/lil_lemi_" target="_blank" rel="noopener noreferrer" class="social-link instagram" 
+                   title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <!-- LinkedIn (you can update this link later) -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" 
+                   title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
         </div>
     </section>
